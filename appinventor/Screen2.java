@@ -1,0 +1,71 @@
+package org.appinventor;
+import com.google.appinventor.components.runtime.HandlesEventDispatching;
+import com.google.appinventor.components.runtime.EventDispatcher;
+import com.google.appinventor.components.runtime.Form;
+import com.google.appinventor.components.runtime.Component;
+import com.google.appinventor.components.runtime.TextBox;
+import com.google.appinventor.components.runtime.DatePicker;
+import com.google.appinventor.components.runtime.Button;
+class Screen2 extends Form implements HandlesEventDispatching {
+  private TextBox TextBox7;
+  private TextBox TextBox1;
+  private TextBox TextBox2;
+  private TextBox TextBox3;
+  private TextBox TextBox4;
+  private TextBox TextBox5;
+  private DatePicker DatePicker1;
+  private TextBox TextBox6;
+  private Button Button1;
+  protected void $define() {
+    this.AlignHorizontal(3);
+    this.AlignVertical(2);
+    this.AppName("LabRadar");
+    this.BackgroundColor(0xFFFFC800);
+    this.Title("Screen2");
+    TextBox7 = new TextBox(this);
+    TextBox7.BackgroundColor(0xFFFFC800);
+    TextBox7.FontBold(true);
+    TextBox7.FontSize(40);
+    TextBox7.Width(LENGTH_FILL_PARENT);
+    TextBox7.Text("LOGIN :");
+    TextBox7.TextColor(0xFFFFFFFF);
+    TextBox1 = new TextBox(this);
+    TextBox1.BackgroundColor(0xFFFFC800);
+    TextBox1.FontSize(20);
+    TextBox1.Width(LENGTH_FILL_PARENT);
+    TextBox1.Hint("Hint for TextBox1");
+    TextBox1.Text("Enter name:");
+    TextBox1.TextColor(0xFFFFFFFF);
+    TextBox2 = new TextBox(this);
+    TextBox3 = new TextBox(this);
+    TextBox3.BackgroundColor(0xFFFFC800);
+    TextBox3.FontSize(20);
+    TextBox3.Width(LENGTH_FILL_PARENT);
+    TextBox3.Hint("Hint for TextBox3");
+    TextBox3.Text("Enter USN:");
+    TextBox3.TextColor(0xFFFFFFFF);
+    TextBox4 = new TextBox(this);
+    TextBox5 = new TextBox(this);
+    TextBox5.BackgroundColor(0xFFFFC800);
+    TextBox5.FontSize(20);
+    TextBox5.Width(LENGTH_FILL_PARENT);
+    TextBox5.Hint("Hint for TextBox5");
+    TextBox5.Text("Enter DOB:");
+    TextBox5.TextColor(0xFFFFFFFF);
+    DatePicker1 = new DatePicker(this);
+    DatePicker1.Text("Choose the date");
+    TextBox6 = new TextBox(this);
+    TextBox6.BackgroundColor(0xFFFFC800);
+    TextBox6.FontSize(20);
+    TextBox6.Width(LENGTH_FILL_PARENT);
+    TextBox6.Hint("Hint for TextBox6");
+    TextBox6.Text("Choose semester:");
+    TextBox6.TextColor(0xFFFFFFFF);
+    Button1 = new Button(this);
+    Button1.Shape(1);
+    Button1.Text("click here to choose semester");
+  }
+  public boolean dispatchEvent(Component component, String componentName, String eventName, Object[] params){
+    return false;
+  }
+}

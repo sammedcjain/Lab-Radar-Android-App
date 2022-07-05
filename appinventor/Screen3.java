@@ -1,0 +1,78 @@
+package org.appinventor;
+import com.google.appinventor.components.runtime.HandlesEventDispatching;
+import com.google.appinventor.components.runtime.EventDispatcher;
+import com.google.appinventor.components.runtime.Form;
+import com.google.appinventor.components.runtime.Component;
+import com.google.appinventor.components.runtime.TextBox;
+import com.google.appinventor.components.runtime.Label;
+import com.google.appinventor.components.runtime.Button;
+import com.google.appinventor.components.runtime.Notifier;
+class Screen3 extends Form implements HandlesEventDispatching {
+  private TextBox TextBox1;
+  private Label Label1;
+  private Button Button1;
+  private TextBox TextBox2;
+  private Button Button2;
+  private TextBox TextBox3;
+  private Button Button3;
+  private TextBox TextBox4;
+  private Button Button4;
+  private TextBox TextBox5;
+  private Button Button5;
+  private Notifier Notifier1;
+  protected void $define() {
+    this.AlignHorizontal(3);
+    this.AlignVertical(2);
+    this.AppName("LabRadar");
+    this.BackgroundColor(0xFFFFC800);
+    this.Title("Screen3");
+    TextBox1 = new TextBox(this);
+    TextBox1.BackgroundColor(0xFFFFC800);
+    TextBox1.FontBold(true);
+    TextBox1.FontSize(30);
+    TextBox1.Width(LENGTH_FILL_PARENT);
+    TextBox1.Hint("Hint for TextBox1");
+    TextBox1.Text("Choose your semester:");
+    TextBox1.TextColor(0xFFFFFFFF);
+    Label1 = new Label(this);
+    Button1 = new Button(this);
+    Button1.BackgroundColor(0xFFFFFFFF);
+    Button1.Height(-1005);
+    Button1.Width(LENGTH_FILL_PARENT);
+    Button1.Shape(1);
+    Button1.Text("3");
+    TextBox2 = new TextBox(this);
+    TextBox2.BackgroundColor(0xFFFFC800);
+    TextBox2.Enabled(false);
+    Button2 = new Button(this);
+    Button2.BackgroundColor(0xFFFFFFFF);
+    Button2.Width(LENGTH_FILL_PARENT);
+    Button2.Shape(1);
+    Button2.Text("4");
+    TextBox3 = new TextBox(this);
+    TextBox3.BackgroundColor(0xFFFFC800);
+    Button3 = new Button(this);
+    Button3.BackgroundColor(0xFFFFFFFF);
+    Button3.Width(LENGTH_FILL_PARENT);
+    Button3.Shape(1);
+    Button3.Text("5");
+    TextBox4 = new TextBox(this);
+    TextBox4.BackgroundColor(0xFFFFC800);
+    Button4 = new Button(this);
+    Button4.BackgroundColor(0xFFFFFFFF);
+    Button4.Width(LENGTH_FILL_PARENT);
+    Button4.Shape(1);
+    Button4.Text("6");
+    TextBox5 = new TextBox(this);
+    TextBox5.BackgroundColor(0xFFFFC800);
+    TextBox5.Width(LENGTH_FILL_PARENT);
+    Button5 = new Button(this);
+    Button5.BackgroundColor(0xFFFFFFFF);
+    Button5.FontBold(true);
+    Button5.Text("Exit");
+    Notifier1 = new Notifier(this);
+  }
+  public boolean dispatchEvent(Component component, String componentName, String eventName, Object[] params){
+    return false;
+  }
+}
